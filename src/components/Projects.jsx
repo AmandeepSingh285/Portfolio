@@ -60,7 +60,7 @@ MobileNet and Inception Net.`,
   return (
     <div
       id="projects"
-      className="font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center sm:mt-20 max-w-full md:mt-10"
+      className="font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center mt-20 max-w-full md:mt-10"
       ref={projRef}
     >
       <div>

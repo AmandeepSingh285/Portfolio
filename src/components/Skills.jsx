@@ -64,7 +64,7 @@ const Skills = ({ skillRef }) => {
   return (
     <div
       id="skills"
-      className="font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center sm:mt-20 max-w-full md:mt-10"
+      className="font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center mt-20 max-w-full md:mt-10"
       ref={skillRef}
     >
       <div className="min-w-full">

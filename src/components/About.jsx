@@ -15,7 +15,7 @@ const About = ({ aboutRef }) => {
   return (
     <div
       id="about"
-      className={`font-playfair lg:h-screen lg:flex lg:flex-col lg:items-center lg:justify-center sm:mt-20 md:mt-10 transition-opacity ${
+      className={`font-playfair lg:h-screen lg:flex lg:flex-col lg:items-center lg:justify-center mt-20 md:mt-10 transition-opacity ${
         isLoaded ? "animate-rotate" : ""
       }`}
       ref={aboutRef}

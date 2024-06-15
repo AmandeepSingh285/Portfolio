@@ -2,16 +2,6 @@ import React, { useState, useEffect } from "react";
 
 const Education = ({ eduRef }) => {
   const [edu, setEdu] = useState("Bachelors");
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    setIsLoaded(true);
-    const timer = setTimeout(() => {
-      setIsLoaded(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   const changeEducation = (value) => {
     const val = value.key;
@@ -45,9 +35,7 @@ const Education = ({ eduRef }) => {
   return (
     <div
       id="education"
-      className={`font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center sm:mt-20 md:mt-10 max-w-full ${
-        isLoaded ? "animate-scaleUp" : ""
-      }`}
+      className={`font-playfair lg:h-screen lg:flex flex-wrap lg:items-center lg:justify-center mt-20 md:mt-10 max-w-full`}
       ref={eduRef}
     >
       <div className="min-w-full">

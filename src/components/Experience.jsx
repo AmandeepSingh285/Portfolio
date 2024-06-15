@@ -24,7 +24,7 @@ const Experience = ({ expRef }) => {
   return (
     <div
       id="experience"
-      className="font-playfair lg:h-screen lg:flex lg:items-center lg:justify-center sm:mt-20"
+      className="font-playfair lg:h-screen lg:flex lg:items-center lg:justify-center mt-20"
       ref={expRef}
     >
       <div>
