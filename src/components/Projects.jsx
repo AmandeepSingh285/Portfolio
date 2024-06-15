@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import github from "../assets/github.svg";
+import { FaGithub } from "react-icons/fa6";
 
 const Projects = ({ projRef }) => {
   const [project, setProject] = useState("Sociobook");
@@ -110,7 +110,9 @@ MobileNet and Inception Net.`,
         </div>
         <div className="mt-6 flex justify-end flex-wrap">
           <a href={proj[project].Link}>
-            <img src={github} className="h-7 w-7 mr-3" />
+            <div className="h-7 w-7 mr-3">
+              <FaGithub className="h-7 w-7" />
+            </div>
           </a>
         </div>
       </div>

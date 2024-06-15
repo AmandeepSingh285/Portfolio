@@ -12,7 +12,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-background min-w-full min-h-screen p-0 m-0">
+    <div className="bg-background min-w-full min-h-screen p-0 m-0 text-white">
       {loading ? <Loading /> : <Home />}
     </div>
   );

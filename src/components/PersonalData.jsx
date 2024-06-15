@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Navitem from "./Navitem";
-import linkedIn from "../assets/linkedIn.svg";
-import github from "../assets/github.svg";
-import email from "../assets/envelope.svg";
-import leetcode from "../assets/leetcode.svg";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import { SiGeeksforgeeks } from "react-icons/si";
 
 const PersonalData = ({
   scrollHandler,
@@ -99,22 +100,37 @@ const PersonalData = ({
         <ul className="flex">
           <li>
             <a href="https://www.linkedin.com/in/amandeepsingh285">
-              <img src={linkedIn} className="h-7 w-7 mr-5" />
+              <div className="mr-5">
+                <FaLinkedinIn className="h-7 w-7" />
+              </div>
             </a>
           </li>
           <li>
             <a href="https://leetcode.com/u/Sting285/">
-              <img src={leetcode} className="h-7 w-7 mr-5" />
+              <div className="h-7 w-7 mr-5">
+                <SiLeetcode className="h-7 w-7" />
+              </div>
             </a>
           </li>
           <li>
             <a href="https://github.com/AmandeepSingh285">
-              <img src={github} className="h-7 w-7 mr-5" />
+              <div className="h-7 w-7 mr-5">
+                <FaGithub className="h-7 w-7" />
+              </div>
             </a>
           </li>
           <li>
             <a href={`mailto:${"amandeep.singh.285@outlook.com"}`}>
-              <img src={email} className="h-7 w-7 mr-5" />
+              <div className="h-7 w-7 mr-5">
+                <MdEmail className="h-7 w-7" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.geeksforgeeks.org/user/mailtoamandeepsingh28/">
+              <div className="h-7 w-7 mr-5">
+                <SiGeeksforgeeks className="h-7 w-7" />
+              </div>
             </a>
           </li>
           <li>
