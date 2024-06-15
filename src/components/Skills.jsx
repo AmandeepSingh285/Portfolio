@@ -92,7 +92,7 @@ const Skills = ({ skillRef }) => {
               return (
                 <div className="flex flex-col justify-center align-middle mr-5">
                   <div className="mx-auto">{item.icon}</div>
-                  <h3 className="font-semibold text-sm mt-3 mx-auto">
+                  <h3 className="font-semibold text-sm mt-3 mx-auto mb-3">
                     {item.name}
                   </h3>
                 </div>
